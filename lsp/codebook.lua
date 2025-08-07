@@ -1,0 +1,23 @@
+return {
+	cmd = { "codebook-lsp", "serve" },
+	filetypes = {
+		"c",
+		"css",
+		"go",
+		"haskell",
+		"html",
+		"javascript",
+		"javascriptreact",
+		"lua",
+		"markdown",
+		"python",
+		"php",
+		"ruby",
+		"rust",
+		"toml",
+		"text",
+		"typescript",
+		"typescriptreact",
+	},
+	root_markers = { ".git", "codebook.toml", ".codebook.toml" },
+}
