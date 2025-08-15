@@ -144,3 +144,10 @@ Git signs is used to mark the buffer for changes,
 
 - [x] - Git signs
 - [x] - Vim Fugitive
+
+***
+
+### TODO Highlight
+
+- [x] Todo comments
+
