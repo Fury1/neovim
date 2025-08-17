@@ -151,3 +151,13 @@ Git signs is used to mark the buffer for changes, Fugitive for everything else.
 
 - [x] Todo comments
 
+***
+
+### Scratch Buffers & Center windows
+
+Center windows while gaining some scratch buffers/files for projects. I use the scratch
+buffers similarly to the Jetbrains feature. The scratch buffers are also saved to the 
+project working directory automatically.
+
+- [x] No Neck Pain
+
