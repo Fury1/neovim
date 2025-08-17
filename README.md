@@ -156,9 +156,8 @@ Fugitive is used for everything else.
 
 ### Scratch Buffers & Center windows
 
-Center windows while gaining some scratch buffers/files for projects. I use the scratch
-buffers similarly to the Jetbrains feature. The scratch buffers are also saved to the 
-project working directory automatically.
+Center windows while gaining some scratch buffers. I use the scratch buffers similarly 
+to the Jetbrains scratch file feature.
 
 - [x] No Neck Pain
 
