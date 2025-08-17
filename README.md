@@ -140,7 +140,8 @@ Manipulate matching characters pairs easily.
 
 ### Git Integration
 
-Git signs is used to mark the buffer for changes, Fugitive for everything else. 
+Gitsigns is being used to work with hunks in the buffer as well as mark changes,
+Fugitive is used for everything else. 
 
 - [x] - Git signs
 - [x] - Vim Fugitive
