@@ -161,3 +161,11 @@ to the Jetbrains scratch file feature.
 
 - [x] No Neck Pain
 
+***
+
+### Neotree
+
+Netrw with features!
+
+- [x] Neotree
+

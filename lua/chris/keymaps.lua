@@ -49,7 +49,7 @@ vim.keymap.set("n", "<leader>tp", "<cmd>tabprevious<CR>")
 vim.keymap.set("n", "<leader>tC", "<cmd>tabclose<CR>")
 
 -- Netrw
-vim.keymap.set("n", "<leader>e", "<cmd>:Ex<CR>")
+-- vim.keymap.set("n", "<leader>e", "<cmd>:Ex<CR>")
 
 -- Make current file executable
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
