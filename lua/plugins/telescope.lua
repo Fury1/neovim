@@ -13,7 +13,7 @@ return {
 			layout_config = {
 				anchor = "s",
 				height = 0.3,
-				width = 0.9,
+				width = 110,
 			},
 			preview = {
 				treesitter = true,
