@@ -169,3 +169,10 @@ Netrw with features!
 
 - [x] Neotree
 
+***
+
+### Buffer Management
+
+Switch around bookmarked buffers easily.
+
+- [x] Arrow buffer manager
