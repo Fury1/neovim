@@ -17,10 +17,17 @@ return {
 			},
 			-- virtual_lines = { current_line = true },
 			virtual_text = {
-				source = true,
 				virt_text_pos = "eol_right_align",
 				current_line = false,
 				virt_text_hide = true,
+				format = function(diagnostic)
+					return string.format(
+						"%s [%s]: %s",
+						diagnostic.source,
+                        diagnostic.code or diagnostic.user_data.lsp.code,
+						diagnostic.message
+					)
+				end,
 			},
 			severity_sort = true,
 		})
