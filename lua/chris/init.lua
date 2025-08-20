@@ -1,20 +1,20 @@
 -- The leader key needs to be set first in keymaps
 -- before anything else.
-require('chris.keymaps')
-require('chris.options')
+require("chris.keymaps")
+require("chris.options")
 
 -- LSPs
 --
 -- Spell Check
-vim.lsp.enable('codebook')
+vim.lsp.enable("codebook")
 
 -- Lua
-vim.lsp.enable('lua_ls')
+vim.lsp.enable("lua_ls")
 
 -- Python
 -- Linting and Formatting
 --
--- Currently, Ruff is intended to be used alongside another Python Language Server 
+-- Currently, Ruff is intended to be used alongside another Python Language Server
 -- in order to support features like navigation, go to definition, and autocompletion.
 -- https://docs.astral.sh/ruff/editors/
 vim.lsp.enable('ruff')
