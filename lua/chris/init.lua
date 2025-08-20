@@ -27,3 +27,6 @@ vim.lsp.enable("basedpyright")
 -- Pylsp + Rope
 -- Missing gd functionality 7/11/25.
 -- vim.lsp.enable('pylsp')
+
+-- Rust
+vim.lsp.enable("rust_analyzer")

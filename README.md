@@ -42,6 +42,18 @@ and *basedpyright* is used for type checking, completions, go to definition, etc
 
 ***
 
+### Rust
+
+Rustup manages the Rust toolchain. Once Rustup is installed, its relevant components are added
+to Neovim.
+
+- [x] rustup
+    - [x] - rust-analyzer
+        - [x] - clippy (swapped for 'cargo check')
+    - [x] - rustfmt
+
+***
+
 ## Plugins
 
 *lazy.nvim* is being used to manage plugins (not to be confused with ***L*azy.nvim**).
