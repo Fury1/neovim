@@ -1,7 +1,7 @@
 {
   "arrow.nvim": { "branch": "master", "commit": "6e0f726f55f99332dd726a53effd6813786b6d49" },
   "blink.cmp": { "branch": "main", "commit": "bae4bae0eedd1fa55f34b685862e94a222d5c6f8" },
-  "conform.nvim": { "branch": "master", "commit": "973f3cb73887d510321653044791d7937c7ec0fa" },
+  "conform.nvim": { "branch": "master", "commit": "04bfa5f35706410376bf7618a01fcf44e3f35b59" },
   "flash.nvim": { "branch": "main", "commit": "3c942666f115e2811e959eabbdd361a025db8b63" },
   "friendly-snippets": { "branch": "main", "commit": "572f5660cf05f8cd8834e096d7b4c921ba18e175" },
   "fzf-lua": { "branch": "main", "commit": "a63d01d48b5f0c3bc2dbe9926404eedd24391017" },
@@ -14,7 +14,7 @@
   "no-neck-pain.nvim": { "branch": "main", "commit": "ecdfe60f23134089fac92659e688b65fdd8b5cc0" },
   "nui.nvim": { "branch": "main", "commit": "de740991c12411b663994b2860f1a4fd0937c130" },
   "nvim-highlight-colors": { "branch": "main", "commit": "1ce0a09bfc28c7274e649d20927cea51e440b65c" },
-  "nvim-lspconfig": { "branch": "master", "commit": "a6dbc91d9ae373a87bcd9e3c15853e309691c39b" },
+  "nvim-lspconfig": { "branch": "master", "commit": "d64ea08d8033543a61af35f2f23cac0f0d05f7b4" },
   "nvim-treesitter": { "branch": "master", "commit": "42fc28ba918343ebfd5565147a42a26580579482" },
   "nvim-web-devicons": { "branch": "master", "commit": "c2599a81ecabaae07c49ff9b45dcd032a8d90f1a" },
   "peek.nvim": { "branch": "master", "commit": "5820d937d5414baea5f586dc2a3d912a74636e5b" },
@@ -24,7 +24,7 @@
   "tiny-code-action.nvim": { "branch": "main", "commit": "597c4a39d5601e050d740f3ef437ee695d1ff3b0" },
   "todo-comments.nvim": { "branch": "main", "commit": "304a8d204ee787d2544d8bc23cd38d2f929e7cc5" },
   "undotree": { "branch": "master", "commit": "28f2f54a34baff90ea6f4a735ef1813ad875c743" },
-  "vague.nvim": { "branch": "main", "commit": "087ff41d1b4d90e7b64e1c97860700fa6b7f0daf" },
+  "vague.nvim": { "branch": "main", "commit": "88fd11f96d705e30634bb3db6b7ea6118431c00f" },
   "vim-fugitive": { "branch": "master", "commit": "61b51c09b7c9ce04e821f6cf76ea4f6f903e3cf4" },
   "vim-matchup": { "branch": "master", "commit": "704c9d98e686836ae1c4b6c4ea5b057ecf5fbbca" }
 }
