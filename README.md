@@ -15,7 +15,7 @@ I prefer the Codebook LSP for spell checking code. Spell checkers in general don
 understand coding conventions, this spell checker does taking language syntax into consideration 
 before making a suggestion.
 
-- [x] LSP Codebook spell checker
+- [x] codebook
 - [x] Disable Neovim spell check when in use, otherwise default back to Neovim's builtin spell 
 check. See **options.lua** for the auto command snippet.
 
@@ -35,10 +35,11 @@ I only really use this for Neovim configuration, basic LSP with a lua style form
 Python requires multiple LSPs for different things. *ruff* is primarily used for formatting/linting
 and *basedpyright* is used for type checking, completions, go to definition, etc (everything else).
 
-- [ ] pylsp + Rope (incomplete)
+- [ ] pylsp (incomplete)
+    - [x] Rope (optional dep)
 - [x] pyright (disabled)
 - [x] basedpyright
-- [x] Ruff (Documentation hover is disabled in favor of pyright/basedpyright)
+- [x] Ruff (documentation hover is disabled in favor of pyright/basedpyright)
 
 ***
 

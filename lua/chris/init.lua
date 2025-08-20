@@ -3,7 +3,7 @@
 require("chris.keymaps")
 require("chris.options")
 
--- LSPs
+-- LSPs --
 --
 -- Spell Check
 vim.lsp.enable("codebook")
@@ -20,7 +20,7 @@ vim.lsp.enable("lua_ls")
 vim.lsp.enable("ruff")
 vim.lsp.enable("basedpyright")
 
--- Pyright 
+-- Pyright
 -- Missing some functionality basedpyright includes.
 -- vim.lsp.enable('pyright')
 --
