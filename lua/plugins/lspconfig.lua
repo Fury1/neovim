@@ -5,6 +5,15 @@ return {
 		-- Global Settings
 		vim.lsp.config("*", {})
 
+		local function diagnostic_format(diagnostic)
+			return string.format(
+				"%s [%s]: %s",
+				diagnostic.source,
+				diagnostic.code or diagnostic.user_data.lsp.code,
+				diagnostic.message
+			)
+		end
+
 		-- LSP message appearance
 		vim.diagnostic.config({
 			signs = {
@@ -15,21 +24,17 @@ return {
 					[vim.diagnostic.severity.HINT] = "󰌵",
 				},
 			},
+			severity_sort = true,
 			-- virtual_lines = { current_line = true },
 			virtual_text = {
 				virt_text_pos = "eol_right_align",
 				current_line = false,
 				virt_text_hide = true,
-				format = function(diagnostic)
-					return string.format(
-						"%s [%s]: %s",
-						diagnostic.source,
-                        diagnostic.code or diagnostic.user_data.lsp.code,
-						diagnostic.message
-					)
-				end,
+				format = diagnostic_format,
 			},
-			severity_sort = true,
+			float = {
+				format = diagnostic_format,
+			},
 		})
 
 		-- Only override gd & gD when there is an LSP available
