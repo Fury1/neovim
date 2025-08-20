@@ -33,10 +33,12 @@ I only really use this for Neovim configuration, basic LSP with a lua style form
 ### Python
 
 Python requires multiple LSPs for different things. *ruff* is primarily used for formatting/linting
-and *pyright* is used for type checking, completions, go to definition, etc (everything else).
+and *basedpyright* is used for type checking, completions, go to definition, etc (everything else).
 
-- [x] pyright
-- [x] Ruff (Documentation hover is disabled in favor of pyright)
+- [ ] pylsp + Rope (incomplete)
+- [x] pyright (disabled)
+- [x] basedpyright
+- [x] Ruff (Documentation hover is disabled in favor of pyright/basedpyright)
 
 ***
 
