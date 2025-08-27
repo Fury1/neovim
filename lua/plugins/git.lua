@@ -4,7 +4,7 @@ return {
 		lazy = false,
 		opts = {},
 		keys = {
-			{ "<leader>ghp", "<cmd>Gitsigns preview_hunk<CR>" },
+			{ "<leader>ghP", "<cmd>Gitsigns preview_hunk<CR>" },
 			{ "<leader>ghs", "<cmd>Gitsigns stage_hunk<CR>", mode = { "n" } },
 			{
 				"<leader>ghs",
