@@ -65,8 +65,6 @@ return {
 			"<leader>k",
 			function()
 				local opts = { anchor_bias = "below" }
-				-- Focus the window by default by calling 2x.
-				vim.lsp.buf.hover(opts)
 				vim.lsp.buf.hover(opts)
 			end,
 		},
