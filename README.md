@@ -19,7 +19,14 @@ before making a suggestion.
 - [x] Disable Neovim spell check when in use, otherwise default back to Neovim's builtin spell 
 check. See **options.lua** for the auto command snippet.
 
-***
+---
+
+### Markdown - JSON - TOML
+
+Simple Markdown, JSON, TOML linting and formatting.
+
+- [x] marksman
+- [x] dprint (plugin based formatter)
 
 ### Lua
 

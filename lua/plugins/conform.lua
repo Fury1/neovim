@@ -5,6 +5,9 @@ return {
 			lua = { "stylua" },
 			python = { "ruff_organize_imports", "ruff_format" },
 			rust = { "rustfmt" },
+			markdown = { "dprint" },
+			json = { "dprint" },
+			toml = { "dprint" },
 		},
 		format_on_save = {
 			lsp_format = "fallback",
