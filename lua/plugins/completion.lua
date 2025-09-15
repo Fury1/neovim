@@ -47,7 +47,7 @@ return {
 				auto_show_delay_ms = 250,
 			},
 			menu = {
-				auto_show = true,
+				auto_show = false,
 				draw = {
 					treesitter = { "lsp" },
 					columns = {
