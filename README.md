@@ -163,10 +163,10 @@ Manipulate matching characters pairs easily.
 ### Git Integration
 
 Gitsigns is being used to work with hunks in the buffer as well as mark changes,
-Fugitive is used for everything else.
+Neogit is used for everything else.
 
 - [x] Git signs
-- [x] Vim Fugitive
+- [x] Neogit
 
 ---
 

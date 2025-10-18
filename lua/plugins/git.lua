@@ -19,10 +19,19 @@ return {
 		},
 	},
 	{
-		"tpope/vim-fugitive",
-		lazy = false,
+		"NeogitOrg/neogit",
+		dependencies = {
+			"nvim-lua/plenary.nvim", -- required
+			"sindrets/diffview.nvim", -- optional - Diff integration
+
+			-- Only one of these is needed.
+			"nvim-telescope/telescope.nvim",
+			-- "ibhagwan/fzf-lua", -- optional
+			-- "nvim-mini/mini.pick", -- optional
+			-- "folke/snacks.nvim", -- optional
+		},
 		keys = {
-			{ "<leader>gs", vim.cmd.Git },
+			{ "<leader>gs", "<cmd>Neogit<CR>" },
 		},
 	},
 }
