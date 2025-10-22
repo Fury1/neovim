@@ -18,6 +18,12 @@ return {
 			},
 		},
 	},
+    config = function(_,opts)
+        require('no-neck-pain').setup(opts)
+        -- No Neck Pain sets this to 2 apparently?
+        -- Default is 0...
+        vim.opt.conceallevel = 0
+    end,
 	keys = {
 		{ "<leader>z", "<cmd>NoNeckPain<CR>" },
 	},
