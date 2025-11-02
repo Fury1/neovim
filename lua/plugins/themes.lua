@@ -1,5 +1,5 @@
 -- Disable all LSP semantic highlights in favor of treesitter always.
-vim.api.nvim_create_autocmd("colorscheme", {
+vim.api.nvim_create_autocmd("LspAttach", {
 	callback = function()
 		for _, group in ipairs(vim.fn.getcompletion("@lsp", "highlight")) do
 			vim.api.nvim_set_hl(0, group, {})
@@ -54,7 +54,7 @@ return {
 				floatBorder = "#878787",
 				line = "#26262d",
 				comment = "#808080",
-				builtin = "#b4d4cf",
+				builtin = "#a2bfba",
 				func = "#c06862",
 				string = "#e8b589",
 				number = "#9c8fb8",
@@ -76,7 +76,22 @@ return {
 				hl.Boolean = {
 					fg = c.func,
 				}
+				hl["@type.builtin"] = {
+					fg = c.keyword,
+					gui = "bold",
+				}
+				hl["@variable.builtin"] = {
+					fg = c.func,
+					gui = "bold",
+				}
 				hl["@boolean"] = {
+					fg = c.func,
+					gui = "bold",
+				}
+				hl["@function.call"] = {
+					fg = c.type,
+				}
+				hl["@constructor"] = {
 					fg = c.func,
 					gui = "bold",
 				}
