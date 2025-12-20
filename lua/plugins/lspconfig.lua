@@ -36,27 +36,6 @@ return {
 				format = diagnostic_format,
 			},
 		})
-
-		-- Only override gd & gD when there is an LSP available
-		-- with the functionality, otherwise, keep Neovims best match.
-		vim.api.nvim_create_autocmd("LspAttach", {
-			callback = function(ev)
-				local client = vim.lsp.get_client_by_id(ev.data.client_id)
-				if client == nil then
-					return
-				end
-				if client:supports_method("textDocument/typeDefinition") then
-					vim.keymap.set("n", "gd", function()
-						vim.lsp.buf.type_definition()
-					end)
-				end
-				if client:supports_method("textDocument/declaration") then
-					vim.keymap.set("n", "gD", function()
-						vim.lsp.buf.declaration()
-					end)
-				end
-			end,
-		})
 	end,
 	keys = {
 		-- This is bound in codeaction.lua cause I prefer the inline popup.
