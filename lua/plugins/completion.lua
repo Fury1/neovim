@@ -3,7 +3,7 @@ return {
 	-- Optional: provides snippets for the snippet source.
 	dependencies = {
 		{ "rafamadriz/friendly-snippets" },
-		{ "echasnovski/mini.icons", version = "*" },
+		{ "nvim-mini/mini.icons", version = "*" },
 	},
 	-- NOTE: Update this in the future as needed, currently this is stable 7/20/25.
 	version = "1.*",
