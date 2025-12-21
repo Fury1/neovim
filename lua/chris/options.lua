@@ -17,6 +17,7 @@ opt.wrap = false
 opt.cursorline = true
 opt.cursorlineopt = 'number'
 opt.scrolloff = 8 -- Can be used to keep cursor center focused on screen (set to 99)
+opt.sidescrolloff = 15 -- Side scroll column buffer
 opt.virtualedit = 'block'
 opt.colorcolumn = '100'
 opt.inccommand = 'split' -- Show :s command in action
