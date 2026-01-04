@@ -26,7 +26,6 @@ return {
 				"rust",
 				"cpp",
 				"python",
-				"markdown",
 				"svelte",
 				"json",
 				"dockerfile",
