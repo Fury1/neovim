@@ -1,5 +1,7 @@
 return {
 	"stevearc/conform.nvim",
+	event = { "BufWritePre" },
+	cmd = { "ConformInfo" },
 	opts = {
 		formatters_by_ft = {
 			lua = { "stylua" },
@@ -9,21 +11,17 @@ return {
 			json = { "dprint" },
 			toml = { "dprint" },
 		},
-		format_on_save = {
-			lsp_format = "fallback",
-			timeout_ms = 500,
-		},
+		default_format_opts = { lsp_format = "fallback" },
+		format_on_save = { timeout_ms = 500 },
 	},
-	config = function(_, opts)
-		require("conform").setup(opts)
-	end,
 	keys = {
 		{
 			"<leader>=",
-			mode = { "n", "v" },
 			function()
-				require("conform").format({ async = true, lsp_format = "never" })
+				require("conform").format({ async = true })
 			end,
+			mode = { "" },
+			desc = "Format buffer",
 		},
 	},
 }
