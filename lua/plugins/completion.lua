@@ -5,7 +5,8 @@ return {
 		{ "rafamadriz/friendly-snippets" },
 		{ "nvim-mini/mini.icons", version = "*" },
 	},
-	-- NOTE: Update this in the future as needed, currently this is stable 7/20/25.
+	-- NOTE: Update this in the future as needed, currently this is stable (12/21/25) and uses
+    -- prebuilt rust binaries for fuzzy matching.
 	version = "1.*",
 	opts = {
 		-- 'default' (recommended) for mappings similar to built-in completions (C-y to accept)
