@@ -3,6 +3,9 @@ return {
 	version = "*",
 	opts = {
 		width = 107,
+		autocmds = {
+			enableOnTabEnter = true,
+		},
 		buffers = {
 			scratchPad = {
 				-- Persist the scratch pads like Jetbrains.
@@ -18,12 +21,12 @@ return {
 			},
 		},
 	},
-    config = function(_,opts)
-        require('no-neck-pain').setup(opts)
-        -- No Neck Pain sets this to 2 apparently?
-        -- Default is 0...
-        vim.opt.conceallevel = 0
-    end,
+	config = function(_, opts)
+		require("no-neck-pain").setup(opts)
+		-- No Neck Pain sets this to 2 apparently?
+		-- Default is 0...
+		vim.opt.conceallevel = 0
+	end,
 	keys = {
 		{ "<leader>z", "<cmd>NoNeckPain<CR>" },
 	},
