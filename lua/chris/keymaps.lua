@@ -44,7 +44,7 @@ vim.keymap.set("n", "<C-Left>", "<cmd>vertical resize -5<CR>")
 
 -- Tab switches
 vim.keymap.set("n", "<leader>tN", "<cmd>tabnew<CR>")
-vim.keymap.set("n", "<leader>tn", "<cmd>tabNext<CR>")
+vim.keymap.set("n", "<leader>tn", "<cmd>tabnext<CR>")
 vim.keymap.set("n", "<leader>tp", "<cmd>tabprevious<CR>")
 vim.keymap.set("n", "<leader>tC", "<cmd>tabclose<CR>")
 
