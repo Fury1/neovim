@@ -98,6 +98,11 @@ return {
 				hl.FlashLabel = {
 					fg = c.hint,
 				}
+				-- Diffview
+				hl.DiffAdd = { bg = "#20303b" }
+				hl.DiffDelete = { bg = "#422C31" }
+				hl.DiffChange = { bg = "#252530" }
+				hl.DiffText = { bg = "#223F57" }
 			end,
 		},
 		config = function(_, opts)
