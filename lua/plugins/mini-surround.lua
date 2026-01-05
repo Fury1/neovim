@@ -1,7 +1,10 @@
 return {
-	"nvim-mini/mini.surround",
-	version = "*",
-	opts = {
-		search_method = "cover_or_nearest",
-	},
+	"kylechui/nvim-surround",
+	version = "^3.0.0", -- Use for stability; omit to use `main` branch for the latest features
+	event = "VeryLazy",
+	config = function()
+		require("nvim-surround").setup({
+			-- Configuration here, or leave empty to use defaults
+		})
+	end,
 }
