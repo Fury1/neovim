@@ -2,10 +2,10 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
 -- Remap 'kj' to to get back to normal mode more generally.
-vim.keymap.set("t", "kj", "<C-\\><C-n>")
-vim.keymap.set("i", "kj", "<Esc>")
-vim.keymap.set("v", "kj", "<Esc>")
-vim.keymap.set("c", "kj", "<C-c>")
+-- vim.keymap.set("t", "kj", "<C-\\><C-n>")
+-- vim.keymap.set("i", "kj", "<Esc>")
+-- vim.keymap.set("v", "kj", "<Esc>")
+-- vim.keymap.set("c", "kj", "<C-c>")
 
 -- Clear search highlight
 vim.keymap.set("n", "<leader>;", "<cmd>nohlsearch<CR>")
