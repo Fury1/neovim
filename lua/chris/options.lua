@@ -36,10 +36,10 @@ opt.autoindent = true
 opt.smartindent = false -- Treesitter indent being used
 
 -- Searching behavior (/)
-vim.opt.hlsearch = true
-vim.opt.incsearch = true
+opt.hlsearch = true
+opt.incsearch = true
 opt.ignorecase = true
-vim.opt.smartcase = true -- Override ignore case if pattern has uppercase
+opt.smartcase = true -- Override ignore case if pattern has uppercase
 
 -- GUI stuff
 opt.termguicolors = true
@@ -55,7 +55,7 @@ opt.undodir = os.getenv("HOME") .. "/.local/state/nvim/undotree"
 opt.undofile = true
 
 -- Add @ to valid file name characters
-vim.opt.isfname:append("@-@")
+opt.isfname:append("@-@")
 
 -- Spell checking
 opt.spelllang = "en_us"
