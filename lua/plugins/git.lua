@@ -1,5 +1,9 @@
 return {
 	{
+		"sindrets/diffview.nvim",
+		opts = {},
+	},
+	{
 		"lewis6991/gitsigns.nvim",
 		lazy = false,
 		opts = {},
@@ -20,7 +24,7 @@ return {
 	},
 	{
 		"NeogitOrg/neogit",
-        lazy = true,
+		lazy = true,
 		dependencies = {
 			"nvim-lua/plenary.nvim", -- required
 			"sindrets/diffview.nvim", -- optional - Diff integration
@@ -31,10 +35,10 @@ return {
 			-- "nvim-mini/mini.pick", -- optional
 			"folke/snacks.nvim", -- optional
 		},
-        cmd = "Neogit",
-        opts = {},
-        keys = {
-            { "<leader>gs", "<cmd>Neogit<CR>", desc = "Show Neogit status" },
+		cmd = "Neogit",
+		opts = {},
+		keys = {
+			{ "<leader>gs", "<cmd>Neogit<CR>", desc = "Show Neogit status" },
 		},
 	},
 }
