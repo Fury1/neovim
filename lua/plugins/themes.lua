@@ -103,6 +103,9 @@ return {
 				hl.DiffDelete = { bg = "#422C31" }
 				hl.DiffChange = { bg = "#252530" }
 				hl.DiffText = { bg = "#223F57" }
+
+				-- Markview
+				hl.MarkviewCode = { bg = c.line }
 			end,
 		},
 		config = function(_, opts)
