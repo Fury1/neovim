@@ -61,6 +61,9 @@ opt.isfname:append("@-@")
 opt.spelllang = "en_us"
 opt.spell = true
 
+-- Folds
+opt.foldenable = false
+
 -- Favor codebook spell check if available in the buffer.
 -- See codebook.lua for language support.
 vim.api.nvim_create_autocmd("LspAttach", {
