@@ -27,7 +27,7 @@ vim.keymap.set("x", "<leader>p", '"_dp')
 -- Keep vim and system clipboards separate on yank
 vim.keymap.set("n", "<leader>y", '"+y')
 vim.keymap.set("v", "<leader>y", '"+y')
-vim.keymap.set("n", "<leader>Y", '"+Y')
+vim.keymap.set("n", "<leader>Y", 'mmgg"+yG`m')
 
 -- Delete to the void
 vim.keymap.set("n", "<leader>_", '"_d')
