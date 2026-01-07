@@ -53,3 +53,7 @@ vim.keymap.set("n", "<leader>e", "<cmd>:Ex<CR>")
 
 -- Make current file executable
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
+
+-- Quickfix list nav
+vim.keymap.set("n", "<C-j>", "<cmd>cnext<CR>")
+vim.keymap.set("n", "<C-k>", "<cmd>cprev<CR>")
