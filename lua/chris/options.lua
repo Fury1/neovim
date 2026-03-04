@@ -84,3 +84,11 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 		vim.highlight.on_yank()
 	end,
 })
+
+-- Add extra environment file detection for .env configs.
+vim.filetype.add({
+	pattern = {
+		["%.env.example"] = { "conf", { priority = 1 } },
+		[".*%.env%..*"] = "sh",
+	},
+})
