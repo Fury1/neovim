@@ -7,8 +7,6 @@ Some setup notes about my config for my future self and any travelers.
 - LSPs are configured in the **/lsp** directory as they should be in Neovim 0.11+
 - The LSP servers and formatters are installed as OS packages
 
----
-
 ### Codebook LSP Spell Checker
 
 I prefer the Codebook LSP for spell checking code. Spell checkers in general don't understand
@@ -18,8 +16,6 @@ making a suggestion.
 - [x] codebook
 - [x] Disable Neovim spell check when in use, otherwise default back to Neovim's builtin spell
       check. See **options.lua** for the auto command snippet.
-
----
 
 ### Markdown - JSON - TOML
 
@@ -35,20 +31,13 @@ I only really use this for Neovim configuration, basic LSP with a lua style form
 - [x] lua_ls
 - [x] stylua
 
----
-
 ### Python
 
 Python requires multiple LSPs for different things. _ruff_ is primarily used for formatting/linting
 and _basedpyright_ is used for type checking, completions, go to definition, etc (everything else).
 
-- [ ] pylsp (incomplete)
-  - [x] Rope (optional dep)
-- [x] pyright (disabled)
 - [x] basedpyright
-- [x] Ruff (documentation hover is disabled in favor of pyright/basedpyright)
-
----
+- [x] Ruff (documentation hover is disabled in favor of basedpyright)
 
 ### Rust
 
@@ -60,13 +49,9 @@ to Neovim.
     - [x] clippy (swapped for 'cargo check')
   - [x] rustfmt
 
----
-
 ## Plugins
 
 _lazy.nvim_ is being used to manage plugins (not to be confused with ***L*azy.nvim**).
-
----
 
 ### Themes
 
@@ -75,28 +60,12 @@ Some of my favorite themes that don't bother my eyes.
 - [x] Kanso
 - [x] Vague (Customized)
 
----
-
 ### Viewing Markdown Files
 
-_Peek_ is being used to render markdown in a Github like format. One thing to note with this plugin
-is that _webkit may have a problem if Nvidia proprietary drivers (linux) are being used_.
-**Peek depends on webkit to create the preview window**. The following snippet should be added to
-**.zshrc** or the like to fix it for now (it will have no effect if AMD drivers are being used).
+_Markdown Preview_ is being used to render markdown in a Github like format.
 
-```
-#.zshrc
-
-# Check if an nvidia driver is actively running.
-if [[ -f /proc/driver/nvidia/version ]]; then
-export WEBKIT_DISABLE_COMPOSITING_MODE=1
-fi
-```
-
-- [x] peek (may require the build command to be run manually from the root of
-      the plugin on failure during first install)
-
----
+- [x] Markdown Preview (requires yarn to build, browser based preview)
+- [x] Markview (inline terminal based preview)
 
 ### Completions
 
@@ -105,15 +74,11 @@ because it is much easier to setup and works well enough.
 
 - [x] Blink
 
----
-
 ### Formatting
 
 Conform is used with my formatters for keymap consistency.
 
 - [x] Conform
-
----
 
 ### Language Parsers
 
@@ -121,28 +86,21 @@ Treesitter is being used for highlighting, indentation, and incremental selectio
 
 _Neovim `smartindent` is disabled when using this._
 
-**NOTE: This should be updated to the 'main' branch eventually.**
-
 - [x] Treesitter
 - [ ] TODO: Treesitter text objects to jump between functions and such.
 
----
-
 ### Fuzzy Finder
 
-Telescope is being used to fuzzy find over buffer, files, grep, jumps, diagnostics, etc.
+Snacks picker is being used to fuzzy find over buffer, files, grep, diagnostics, etc.
 
-- [x] Telescope w/ fzf-native
-
----
+- [x] Snacks Pickers
 
 ### Code Action Menu
 
 I like a customizable inline LSP code action popup.
 
-- [x] Tiny code action
-
----
+- [x] Tiny code action (disabled)
+- [x] Snacks Picker
 
 ### Jump Navigation
 
@@ -150,15 +108,11 @@ Jump to to a location in view directly.
 
 - [x] Flash
 
----
-
 ### Surrounds
 
-Manipulate matching characters pairs easily.
+Manipulate matching character pairs easily.
 
-- [x] Vim Surround
-
----
+- [x] Nvim Surround
 
 ### Git Integration
 
@@ -167,14 +121,11 @@ Neogit is used for everything else.
 
 - [x] Git signs
 - [x] Neogit
-
----
+- [x] Diffview
 
 ### TODO Highlight
 
 - [x] Todo comments
-
----
 
 ### Scratch Buffers & Center windows
 
@@ -183,15 +134,19 @@ to the Jetbrains scratch file feature.
 
 - [x] No Neck Pain
 
----
+### File Exploration
 
-### Neotree
+Explore and modify file trees quickly.
 
-Netrw with features!
+- [x] Snacks Explorer
+- [x] Oil Nvim
 
-- [x] Neotree
+### LazyDev
 
----
+Configure the lua-ls language server for editing Neovim configuration (configures the lsp for
+the Neovim environment quick and easily).
+
+- [x] LazyDev
 
 ### Buffer Management
 
