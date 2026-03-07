@@ -78,22 +78,22 @@ return {
 				}
 				hl["@type.builtin"] = {
 					fg = c.keyword,
-					gui = "bold",
+					bold = true,
 				}
 				hl["@variable.builtin"] = {
 					fg = c.func,
-					gui = "bold",
+					bold = true,
 				}
 				hl["@boolean"] = {
 					fg = c.func,
-					gui = "bold",
+					bold = true,
 				}
 				hl["@function.call"] = {
 					fg = c.type,
 				}
 				hl["@constructor"] = {
 					fg = c.func,
-					gui = "bold",
+					bold = true,
 				}
 				hl.FlashLabel = {
 					fg = c.hint,
