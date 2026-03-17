@@ -33,9 +33,6 @@ vim.keymap.set("n", "<leader>Y", 'mmgg"+yG`m')
 vim.keymap.set("n", "<leader>_", '"_d')
 vim.keymap.set("v", "<leader>_", '"_d')
 
--- Yank and keep cursor position
-vim.keymap.set("v", "y", "mmy`m")
-
 -- Window resizing
 vim.keymap.set("n", "<C-Up>", "<cmd>resize +5<CR>")
 vim.keymap.set("n", "<C-Down>", "<cmd>resize -5<CR>")
@@ -57,3 +54,8 @@ vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 -- Quickfix list nav
 vim.keymap.set("n", "<C-j>", "<cmd>cnext<CR>")
 vim.keymap.set("n", "<C-k>", "<cmd>cprev<CR>")
+
+-- Disable C-b/C-f
+-- Never used and conflicts with keybinds in tmux and terminal emulators
+vim.keymap.set({ "n", "i", "v" }, "<C-b>", "<Nop>")
+vim.keymap.set({ "n", "i", "v" }, "<C-f>", "<Nop>")
