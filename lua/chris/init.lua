@@ -28,3 +28,6 @@ vim.lsp.enable("rust_analyzer")
 
 -- Docker
 vim.lsp.enable("docker_language_server")
+
+-- Yaml
+vim.lsp.enable("yamlls")
