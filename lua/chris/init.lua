@@ -33,3 +33,6 @@ vim.lsp.enable("basedpyright")
 
 -- Rust
 vim.lsp.enable("rust_analyzer")
+
+-- Docker
+vim.lsp.enable("docker_language_server")
