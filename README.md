@@ -17,12 +17,28 @@ making a suggestion.
 - [x] Disable Neovim spell check when in use, otherwise default back to Neovim's builtin spell
       check. See **options.lua** for the auto command snippet.
 
-### Markdown - JSON - TOML
+### Markdown
 
-Simple Markdown, JSON, TOML linting and formatting.
+Markdown linting, completions, goto definition, references, renames, diagnostics, and more.
 
 - [x] marksman
-- [x] dprint (plugin based formatter)
+
+### Formatting Popular File Types
+
+Dprint can format various common file types for consistency using it's plugin system.
+
+- [x] dprint
+  - typescript
+  - json
+  - markdown
+  - toml
+  - dockerfile
+  - jupyter
+  - markup (HTML, Vue, Svelte, Astro, XML, etc)
+  - YAML
+
+> _Note:_ Plugins should be installed with a global config (`dprint init --global`), and optionally
+> a per project override config.
 
 ### Lua
 
@@ -48,6 +64,23 @@ to Neovim.
   - [x] rust-analyzer
     - [x] clippy (swapped for 'cargo check')
   - [x] rustfmt
+
+### Docker
+
+LSP for Docker that provides some nice features for the ecosystem.
+
+- [x] docker-language-server
+
+> _Note:_ The Docker Language Server relies on some features that are dependent on
+> [Buildx](https://github.com/docker/docker-language-server?tab=readme-ov-file#requirements).
+> If Buildx is not available as a Docker CLI plugin then those features will not be available.
+
+### YAML
+
+Schema validation from the [JSON Schema Store](https://www.schemastore.org/). This works well
+with things like Docker Compose.
+
+- [x] yaml-language-server
 
 ## Plugins
 
@@ -93,7 +126,7 @@ _Neovim `smartindent` is disabled when using this._
 
 Snacks picker is being used to fuzzy find over buffer, files, grep, diagnostics, etc.
 
-- [x] Snacks Pickers
+- [x] Snacks Picker
 
 ### Code Action Menu
 
