@@ -23,14 +23,6 @@ vim.lsp.enable("lua_ls")
 vim.lsp.enable("ruff")
 vim.lsp.enable("basedpyright")
 
--- Pyright
--- Missing some functionality basedpyright includes.
--- vim.lsp.enable('pyright')
---
--- Pylsp + Rope
--- Missing gd functionality 7/11/25.
--- vim.lsp.enable('pylsp')
-
 -- Rust
 vim.lsp.enable("rust_analyzer")
 
